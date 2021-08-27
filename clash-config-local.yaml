@@ -71,7 +71,7 @@ proxy-providers:
   cn:
     type: http
     url: "https://{{ .domain }}/clash/proxies?c=CN"
-    path: {{ .domain }}/provider-cn.yaml
+    path: {{ .domain }}/provider.yaml
     health-check:
       enable: true
       interval: 600
