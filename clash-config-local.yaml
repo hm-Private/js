@@ -79,14 +79,14 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-#  us:
-#    type: http
-#    url: "https://{{ .domain }}/clash/proxies?c=US"
-#    path: {{ .domain }}/provider-us.yaml
-#    health-check:
-#      enable: true
-#      interval: 600
-#      url: http://www.gstatic.com/generate_204
+  tw:
+    type: http
+    url: "https://{{ .domain }}/clash/proxies?c=TW"
+    path: {{ .domain }}/provider-us.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
   hk:
     type: http
     url: "https://{{ .domain }}/clash/proxies?c=HK"
