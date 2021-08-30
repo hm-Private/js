@@ -70,7 +70,7 @@ proxy-groups:
 proxy-providers:
   all:
     type: http
-    url: "https://{{ .domain }}/clash/proxies?c=CN"
+    url: "https://{{ .domain }}/clash/proxies?c=CN&type=ssr,vmess,trojan"
     path: {{ .domain }}/provider.yaml
     health-check:
       enable: true
@@ -78,7 +78,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   tw:
     type: http
-    url: "https://{{ .domain }}/clash/proxies?c=TW"
+    url: "https://{{ .domain }}/clash/proxies?c=TW&type=ssr,vmess,trojan"
     path: {{ .domain }}/provider-tw.yaml
     health-check:
       enable: true
@@ -86,7 +86,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   hk:
     type: http
-    url: "https://{{ .domain }}/clash/proxies?c=HK"
+    url: "https://{{ .domain }}/clash/proxies?c=HK&type=ssr,vmess,trojan"
     path: {{ .domain }}/provider-hk.yaml
     health-check:
       enable: true
@@ -94,7 +94,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   jp:
     type: http
-    url: "https://{{ .domain }}/clash/proxies?c=JP"
+    url: "https://{{ .domain }}/clash/proxies?c=JP&type=ssr,vmess,trojan"
     path: {{ .domain }}/provider-jp.yaml
     health-check:
       enable: true
@@ -102,7 +102,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   sg:
     type: http
-    url: "https://{{ .domain }}/clash/proxies?c=SG"
+    url: "https://{{ .domain }}/clash/proxies?c=SG&type=ssr,vmess,trojan"
     path: {{ .domain }}/provider-sg.yaml
     health-check:
       enable: true
@@ -110,7 +110,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   kr:
     type: http
-    url: "https://{{ .domain }}/clash/proxies?c=KR"
+    url: "https://{{ .domain }}/clash/proxies?c=KR&type=ssr,vmess,trojan"
     path: {{ .domain }}/provider-kr.yaml
     health-check:
       enable: true
