@@ -22,7 +22,7 @@ proxy-groups:
   - name: 🇨🇳 中国手动选择
     type: select
     use:
-      - all
+      - cn
 
   - name: 🇭🇰 香港节点
     type: url-test
@@ -64,8 +64,8 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 150
     tolerance: 50
-    proxies:
-      - US
+    use:
+      - us
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -76,7 +76,7 @@ proxy-groups:
       - 🚀 节点选择
      
 proxy-providers:
-  all:
+  cn:
     type: http
     url: "https://{{ .domain }}/clash/proxies?c=CN&type=ssr,vmess,trojan"
     path: {{ .domain }}/provider.yaml
@@ -130,7 +130,7 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       
-  US:
+  cn:
     type: http
     url: "https://{{ .domain }}/clash/proxies?c=US&type=ssr,vmess,trojan"
     path: {{ .domain }}/provider-kr.yaml
