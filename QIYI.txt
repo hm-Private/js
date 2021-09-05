@@ -17,7 +17,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
-      - 🇺🇲 美国节点
 
   - name: 🇨🇳 中国手动选择
     type: select
@@ -59,13 +58,7 @@ proxy-groups:
     tolerance: 50
     use:
       - kr
-  - name: 🇺🇲 美国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 150
-    tolerance: 50
-    use:
-      - us
+
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -78,7 +71,7 @@ proxy-groups:
 proxy-providers:
   cn:
     type: http
-    url: "https://{{ .domain }}/clash/proxies?c=CN&type=ssr,vmess,trojan"
+    url: "https://{{ .domain }}/clash/proxies?c=CN"
     path: {{ .domain }}/provider.yaml
     interval: 3600
     health-check:
@@ -87,7 +80,7 @@ proxy-providers:
       
   tw:
     type: http
-    url: "https://{{ .domain }}/clash/proxies?c=TW&type=ssr,vmess,trojan"
+    url: "https://{{ .domain }}/clash/proxies?c=TW"
     path: {{ .domain }}/provider-tw.yaml
     interval: 3600
     health-check:
@@ -96,7 +89,7 @@ proxy-providers:
 
   hk:
     type: http
-    url: "https://{{ .domain }}/clash/proxies?c=HK&type=ssr,vmess,trojan"
+    url: "https://{{ .domain }}/clash/proxies?c=HK"
     path: {{ .domain }}/provider-hk.yaml
     interval: 3600
     health-check:
@@ -105,7 +98,7 @@ proxy-providers:
 
   jp:
     type: http
-    url: "https://{{ .domain }}/clash/proxies?c=JP&type=ssr,vmess,trojan"
+    url: "https://{{ .domain }}/clash/proxies?c=JP"
     path: {{ .domain }}/provider-jp.yaml
     interval: 3600
     health-check:
@@ -114,7 +107,7 @@ proxy-providers:
 
   sg:
     type: http
-    url: "https://{{ .domain }}/clash/proxies?c=SG&type=ssr,vmess,trojan"
+    url: "https://{{ .domain }}/clash/proxies?c=SG"
     path: {{ .domain }}/provider-sg.yaml
     interval: 3600
     health-check:
@@ -123,16 +116,7 @@ proxy-providers:
 
   kr:
     type: http
-    url: "https://{{ .domain }}/clash/proxies?c=KR&type=ssr,vmess,trojan"
-    path: {{ .domain }}/provider-kr.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      
-  us:
-    type: http
-    url: "https://{{ .domain }}/clash/proxies?c=US&type=ssr,vmess,trojan"
+    url: "https://{{ .domain }}/clash/proxies?c=KR"
     path: {{ .domain }}/provider-kr.yaml
     interval: 3600
     health-check:
