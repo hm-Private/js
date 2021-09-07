@@ -35,19 +35,16 @@ server=/*.xiaomi.com/119.29.29.29
 
 
 [server_remote]
-https://hm2019721.cf/Document/ZJ/wuxianzhongzhuan.txt, tag=中转, update-interval=172800, opt-parser=true, enabled=false
-https://subcon.dlj.tf/sub?target=quanx&url=https%3A%2F%2Fhm2019721.ml%2Fclash%2Fproxies%3Fc%3DCN%26filter%3Dr%26type%3Dssr%2Cvmess%2Ctrojan&insert=false&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, tag=代理池, update-interval=172800, opt-parser=true, enabled=false
-https://s.sublink.me/subscribe/108/Md4EI54C8Lm/ssr/, tag=奇迹0819, update-interval=172800, opt-parser=false, enabled=true
-
+https://hm2019721.cf/Document/WM/dXADSxYf40901.txt, tag=中转, update-interval=172800, opt-parser=false, enabled=true
 
 [policy]
 static=全球加速, 香港节点, 台湾节点, 日本节点, 狮城节点, 美国节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 url-latency-benchmark=香港节点, server-tag-regex=(?=.*(港|HK|(?i)Hong))^((?!(HKBN C|HKT A|HKT H|HKT B|HKT F|台|日|韩|新|美|动)).)*$, check-interval=150, tolerance=100, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
-url-latency-benchmark=台湾节点, server-tag-regex=(?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$, check-interval=9999, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
-url-latency-benchmark=日本节点, server-tag-regex=(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$, check-interval=9999, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
-url-latency-benchmark=狮城节点, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Singapore))^((?!(最新|港|台|日|韩|美)).)*$, check-interval=9999, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
-url-latency-benchmark=美国节点, server-tag-regex=(?=.*(美|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$, check-interval=9999, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
-static=苹果服务, direct, 香港节点, 台湾节点, 美国节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+url-latency-benchmark=台湾节点, server-tag-regex=(?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$, check-interval=200, tolerance=70, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+url-latency-benchmark=日本节点, server-tag-regex=(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$, check-interval=200, tolerance=70, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+url-latency-benchmark=狮城节点, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Singapore))^((?!(最新|港|台|日|韩|美)).)*$, check-interval=200, tolerance=70, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+url-latency-benchmark=美国节点, server-tag-regex=(?=.*(美|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$, check-interval=200, tolerance=70, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+static=苹果服务, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
 static=国际媒体, 香港节点, 台湾节点, 日本节点, 美国节点, 狮城节点, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
 static=黑白名单, 全球加速, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
 
@@ -66,7 +63,7 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Quant
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/AllInOne/AllInOne.conf, tag=复写去广告 AllInOne, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult%20X/TikTok-JP.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.qxrewrite, tag=开屏去广告, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/hm-Private/js/main/Cookie, tag=自编获取Cookie, update-interval=172800, opt-parser=false, enabled=false
+
 
 
 [server_local]
@@ -94,18 +91,9 @@ final, 黑白名单
 
 
 [task_local]
-30 0 * * *  https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.js, tag=贴吧_每日签到, enabled=true
 
-20 0 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_signin.js, tag=联通_签到与抽奖, enabled=true
-
-0 9 * * * https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js, tag=吾爱签到, enabled=true
 
 [http_backend]
 
 
-
-
 [mitm]
-passphrase = A9571C2B
-p12 = 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
-skip_validating_cert = true
