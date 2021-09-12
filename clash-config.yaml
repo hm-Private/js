@@ -141,6 +141,7 @@ proxy-providers:
 
 rules:
  - DOMAIN,hm2019721.ml,🚀 节点选择
+ - DOMAIN-SUFFIX,hm2019721.ml,🚀 节点选择
  - DOMAIN-SUFFIX,smtp,🎯 全球直连
  - DOMAIN-KEYWORD,aria2,🎯 全球直连
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
